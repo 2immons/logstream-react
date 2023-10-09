@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="calculator" class="calculator">
+            <div class="title title-main"><h2>Калькулятор</h2></div>
+            <input id="inputWindow" class="inputWindow" type="text">
+            <div class="calculator-btn-line">
+                <button class="calculator-btn" onclick="append('1')">1</button>
+                <button class="calculator-btn" onclick="append('2')">2</button>
+                <button class="calculator-btn" onclick="append('3')">3</button>
+                <button class="calculator-btn" onclick="append('+')">+</button>
+            </div>
+            <div class="calculator-btn-line">
+                <button class="calculator-btn" onclick="append('4')">4</button>
+                <button class="calculator-btn" onclick="append('5')">5</button>
+                <button class="calculator-btn" onclick="append('6')">6</button>
+                <button class="calculator-btn" onclick="append('-')">-</button>
+            </div>
+            <div class="calculator-btn-line">
+                <button class="calculator-btn" onclick="append('7')">7</button>
+                <button class="calculator-btn" onclick="append('8')">8</button>
+                <button class="calculator-btn" onclick="append('9')">9</button>
+                <button class="calculator-btn" onclick="append('*')">*</button>
+            </div>
+            <div class="calculator-btn-line">
+                <button class="calculator-btn" onclick="append('0')">0</button>
+                <button class="calculator-btn" onclick="append('/')">/</button>
+                <button class="calculator-btn" onclick="calculate()">=</button>
+                <button class="calculator-btn" onclick="clear()">C</button>
+            </div>
+        </div>
+        <div class="history">
+            <div class="title title-history">
+                <h2>История</h2>
+            </div>
+            <div id="history-logs" class="history-logs">
+                <!-- тут будет отображаться история-->
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
