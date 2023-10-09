@@ -2,7 +2,7 @@ function append(value) {
     document.getElementById('inputWindow').value += value
 }
 
-function clear() {
+function clearInputWindow() {
     document.getElementById('inputWindow').value = ''
 }
 
@@ -10,7 +10,7 @@ function calculate() {
     const expression = document.getElementById('inputWindow').value
     const result = eval(expression)
     addToHistory(expression, result)
-    clear()
+    clearInputWindow()
 }
 
 function addToHistory(expression, result) {
